@@ -1,1 +1,7 @@
-huggingface_hub==0.25.2
+certifi
+requests
+python-telegram-bot
+transformers
+torch
+scipy
+librosa
