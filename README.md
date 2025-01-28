@@ -1,5 +1,5 @@
 ---
-title: Gradio Chatbot
+title: Translate KH S2S
 emoji: 💬
 colorFrom: yellow
 colorTo: purple
