@@ -11,6 +11,7 @@ import torch
 import scipy.io.wavfile
 import os
 import librosa
+from dotenv import load_dotenv
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -19,18 +20,15 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 class Config:
     def __init__(self):
-        try:
-            with open('config.json') as f:
-                config = json.load(f)
-                self.telegram_api_key = config['TelegramApiKey']
-                self.voice_message_file_path = config['VoiceMessageFilePath']
-                self.translate_kh_username = config['TranslateKHUsername']
-                self.translate_kh_password = config['TranslateKHPassword']
-            if not all([self.telegram_api_key, self.voice_message_file_path, 
-                        self.translate_kh_username, self.translate_kh_password]):
-                raise ValueError("Missing required configuration keys in 'config.json'.")
-        except FileNotFoundError:
-            raise FileNotFoundError("The 'config.json' file is missing. Please create it with the required keys.")
+        load_dotenv()
+        self.telegram_api_key = os.getenv('TELEGRAM_API_KEY')
+        self.voice_message_file_path = os.getenv('VOICE_MESSAGE_FILE_PATH')
+        self.translate_kh_username = os.getenv('TRANSLATE_KH_USERNAME')
+        self.translate_kh_password = os.getenv('TRANSLATE_KH_PASSWORD')
+        
+        if not all([self.telegram_api_key, self.voice_message_file_path, 
+                    self.translate_kh_username, self.translate_kh_password]):
+            raise ValueError("Missing required environment variables.")
 
 
 class TranscribeKHBot:
