@@ -2,6 +2,10 @@
 
 TranscribeKH Bot is an advanced Telegram bot that transcribes voice messages, translates them to Khmer, and generates Khmer speech. It leverages state-of-the-art AI models for speech recognition, translation, and text-to-speech synthesis.
 
+## Quick Start
+Start using TranscribeKH Bot immediately by clicking this link:
+https://telegram.me/transcribe_kh_bot
+
 ## Features
 
 - Voice message transcription using Whisper
@@ -75,9 +79,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - OpenAI for the Whisper model
-- Facebook for the MMS-TTS model
+- Meta for the MMS-TTS model
 - TranslateKH for their translation API
-- The Python-Telegram-Bot team for their excellent library
 
 ## Contact
 
