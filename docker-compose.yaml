@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  transcribe-kh-bot:
+    build: .
+    container_name: transcribe_kh_bot
+    ports:
+      - "8443:8443"
+    environment:
+      TELEGRAM_API_KEY: ${TELEGRAM_API_KEY}
+      VOICE_MESSAGE_FILE_PATH: ${VOICE_MESSAGE_FILE_PATH}
+      TRANSLATE_KH_USERNAME: ${TRANSLATE_KH_USERNAME}
+      TRANSLATE_KH_PASSWORD: ${TRANSLATE_KH_PASSWORD}
+    volumes:
+      - ./data:/app/data
