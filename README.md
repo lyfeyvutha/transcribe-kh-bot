@@ -28,7 +28,7 @@ TranscribeKH Bot is an advanced Telegram bot that transcribes voice messages, tr
    ```
 
 3. Create a `.env` file in the project root with the following structure:
-   ```json
+   ```bash
    {
       TELEGRAM_API_KEY="YOUR_TELEGRAM_BOT_TOKEN"
       VOICE_MESSAGE_FILE_PATH="path/to/save/voice/messages",
