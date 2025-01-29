@@ -27,13 +27,13 @@ TranscribeKH Bot is an advanced Telegram bot that transcribes voice messages, tr
    pip install -r requirements.txt
    ```
 
-3. Create a `config.json` file in the project root with the following structure:
+3. Create a `.env` file in the project root with the following structure:
    ```json
    {
-     "TelegramApiKey": "YOUR_TELEGRAM_BOT_TOKEN",
-     "VoiceMessageFilePath": "path/to/save/voice/messages",
-     "TranslateKHUsername": "YOUR_TRANSLATE_KH_USERNAME",
-     "TranslateKHPassword": "YOUR_TRANSLATE_KH_PASSWORD"
+      TELEGRAM_API_KEY="YOUR_TELEGRAM_BOT_TOKEN"
+      VOICE_MESSAGE_FILE_PATH="path/to/save/voice/messages",
+      TRANSLATE_KH_USERNAME="YOUR_TRANSLATE_KH_USERNAME",
+      TRANSLATE_KH_PASSWORD="YOUR_TRANSLATE_KH_PASSWORD"
    }
    ```
 
