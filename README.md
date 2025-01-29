@@ -1,12 +1,84 @@
----
-title: Translate KH S2S
-emoji: 💬
-colorFrom: yellow
-colorTo: purple
-sdk: gradio
-sdk_version: 5.0.1
-app_file: app.py
-pinned: false
----
+# TranscribeKH Bot
 
-An example chatbot using [Gradio](https://gradio.app), [`huggingface_hub`](https://huggingface.co/docs/huggingface_hub/v0.22.2/en/index), and the [Hugging Face Inference API](https://huggingface.co/docs/api-inference/index).
+TranscribeKH Bot is an advanced Telegram bot that transcribes voice messages, translates them to Khmer, and generates Khmer speech. It leverages state-of-the-art AI models for speech recognition, translation, and text-to-speech synthesis.
+
+## Features
+
+- Voice message transcription using Whisper
+- English to Khmer translation using TranslateKH API
+- Khmer text-to-speech synthesis using MMS-TTS
+- User-friendly Telegram interface
+
+## Prerequisites
+
+- Python 3.8+
+- CUDA-capable GPU (recommended for faster processing)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/lyfeyvutha/transcribe-kh-bot.git
+   cd transcribe-kh-bot
+   ```
+
+2. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Create a `config.json` file in the project root with the following structure:
+   ```json
+   {
+     "TelegramApiKey": "YOUR_TELEGRAM_BOT_TOKEN",
+     "VoiceMessageFilePath": "path/to/save/voice/messages",
+     "TranslateKHUsername": "YOUR_TRANSLATE_KH_USERNAME",
+     "TranslateKHPassword": "YOUR_TRANSLATE_KH_PASSWORD"
+   }
+   ```
+
+## Usage
+
+1. Start the bot:
+   ```bash
+   python main.py
+   ```
+
+2. Open Telegram and start a conversation with your bot.
+
+3. Send a voice message to the bot.
+
+4. The bot will process your message and reply with:
+   - The original English transcription
+   - The Khmer translation
+   - A voice message with the Khmer speech
+
+## Commands
+
+- `/start`: Initialize the bot and get a welcome message
+- `/help`: Display help information
+
+## Technical Details
+
+- Speech Recognition: OpenAI's Whisper (medium model)
+- Translation: TranslateKH API
+- Text-to-Speech: Facebook's MMS-TTS for Khmer
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- OpenAI for the Whisper model
+- Facebook for the MMS-TTS model
+- TranslateKH for their translation API
+- The Python-Telegram-Bot team for their excellent library
+
+## Contact
+
+For any queries or support, please open an issue in the GitHub repository.
