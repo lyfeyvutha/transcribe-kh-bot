@@ -1,10 +1,14 @@
-# Transcribe KH Bot
+# Transcribe KH Bot 
 
-Transcribe KH Bot is an advanced Telegram bot that transcribes voice messages, translates them to Khmer, and generates Khmer speech. It leverages state-of-the-art AI models for speech recognition, translation, and text-to-speech synthesis.
+Transcribe KH Bot is an advanced Telegram bot that transcribes voice messages, translates them to Khmer, and generates Khmer speech. It leverages open-source AI models for speech recognition, translation, and text-to-speech synthesis.
 
-## Quick Start
-Start using Transcribe KH Bot immediately by clicking this link:
-https://telegram.me/transcribe_kh_bot
+
+## Transcribe KH Bot Demo
+
+This video demonstration shows the bot transcribing a voice message, translating it to Khmer, and generating Khmer speech. Users can see how easy and efficient it is to use the bot directly in Telegram.
+
+<video src="https://github.com/user-attachments/assets/e41287f7-12f5-4e44-b003-4bc094db1cb9"></video>
+
 
 ## Features
 
@@ -74,7 +78,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/lyfeyvutha/transcribe-kh-bot/blob/main/LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -85,3 +89,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any queries or support, please open an issue in the GitHub repository.
+
+## Author
+
+[Chealyfey Vutha](https://github.com/lyfeyvutha)
