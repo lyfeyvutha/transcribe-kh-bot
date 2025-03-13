@@ -1,6 +1,6 @@
-# Transcribe KH Bot 
+# Transcribe KH Bot - Speech to Text
 
-Transcribe KH Bot is an advanced Telegram bot that transcribes voice messages, translates them to Khmer, and generates Khmer speech. It leverages open-source AI models for speech recognition, translation, and text-to-speech synthesis.
+Transcribe KH Bot is an advanced Telegram bot designed for speech-to-text tasks. It transcribes English voice messages, translates them into Khmer, and generates Khmer text using open-source AI models for speech recognition and translation. In its latest version, it also includes the ability to generate Khmer speech, making it even more versatile.
 
 
 ## Transcribe KH Bot Demo
